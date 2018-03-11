@@ -14,6 +14,7 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
 }
 
 /*
@@ -107,14 +108,21 @@ ul{
     padding: 0;
     list-style: none;
 }
-
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 /* ==========================================================================
-   HEADER
+   GENERAL END
    ========================================================================== */
-
+/* ==========================================================================
+   HEADER START
+   ========================================================================== */
 header{
     font-family: 'Raleway', sans-serif;
     font-size: large;
+    font-style: unset;
     text-align: center;
 }
 
@@ -127,21 +135,24 @@ nav{
     display:inline-block;
     text-align: center;
     padding: 10px;
-    opacity: .6;
+    opacity: .7;
 }
 
 .headerLink:hover{
     opacity: 1;
 }
-
 /* ==========================================================================
-   FOOTER
+   HEADER END
    ========================================================================== */
 
+/* ==========================================================================
+   FOOTER START
+   ========================================================================== */
 footer{
     font-family: 'Open Sans', sans-serif;
     font-size: x-small;
     display: inline-block;
+    flex-shrink: 0;
 }
 
 .socialMedia{
@@ -159,26 +170,62 @@ footer{
     width:50%;
     height:auto;
 }
+/* ==========================================================================
+   FOOTER END
+   ========================================================================== */
 
 /* ==========================================================================
-   VIDEO PORTFOLIO
+   VIDEO PORTFOLIO START
    ========================================================================== */
 #generalPortfolio{
     padding: 0% 2% 2% 2%;
+    flex: 1 0 auto;
 }
+
 iframe{
     display: block;
     margin: auto;
     border: 10px groove #cccccc;
     overflow:auto;
 }
+/* ==========================================================================
+   VIDEO PORTFOLIO END
+   ========================================================================== */
 
 /* ==========================================================================
-   CONTACT FORM
+   PHOTO PORTFOLIO START
+   ========================================================================== */
+#photosBanner{
+    font-family: "Open Sans";
+    font-size: medium;
+    font-style: italic;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: left;
+}
+
+#photos{
+    display: block;
+    text-align: center;
+    flex: 1 0 auto;
+}
+
+#photos img{
+    padding: 15px 25px 15px 25px;
+}
+
+
+/* ==========================================================================
+   PHOTO PORTFOLIO END
+   ========================================================================== */
+
+/* ==========================================================================
+   CONTACT FORM START
    ========================================================================== */
 #contactForm{
     font-family: 'Open Sans', sans serif;
     text-align: center;
+    flex: 1 0 auto;
 }
 
 input{
@@ -190,7 +237,9 @@ input{
 #emailBox {
     padding: 5%;
 }
-
+/* ==========================================================================
+   CONTACT FORM END
+   ========================================================================== */
 
 
 
